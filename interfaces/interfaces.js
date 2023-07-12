@@ -12,3 +12,4 @@ const pessoa = {
 saudarComOla(pessoa);
 mudarNome(pessoa);
 saudarComOla(pessoa);
+saudarComOla({ nome: 'Jonas', idade: 27, xyz: true, altura: 1.75 });

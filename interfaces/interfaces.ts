@@ -1,5 +1,7 @@
 interface Humano {
     nome: string
+    idade?: number
+    [prop: string]: any //Propriedade com nome e valor dinâmicos
 }
 
 function saudarComOla(pessoa: Humano) {
@@ -18,3 +20,4 @@ const pessoa = {
 saudarComOla(pessoa)
 mudarNome(pessoa)
 saudarComOla(pessoa)
+saudarComOla({ nome: 'Jonas', idade: 27, xyz: true, altura: 1.75 })
